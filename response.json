@@ -1,0 +1,1 @@
+{"statusCode": 202, "headers": {"Content-Type": "application/json", "Access-Control-Allow-Origin": "*"}, "body": "{\"status\": \"accepted\", \"processed\": 1, \"failed\": 0, \"request_id\": \"7a59c248-d812-48f7-9841-81b436314696\"}"}

@@ -1,0 +1,8 @@
+{
+  "body": "{\"records\": [{\"event_type\": \"direct_lambda_test\", \"user_id\": \"test_direct\"}]}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "httpMethod": "POST",
+  "isBase64Encoded": false
+}
