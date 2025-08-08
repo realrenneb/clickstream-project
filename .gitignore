@@ -1,5 +1,3 @@
-# Create a clean .gitignore file
-cat > .gitignore << 'EOF'
 # Python
 __pycache__/
 *.py[cod]
