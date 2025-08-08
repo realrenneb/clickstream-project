@@ -130,7 +130,7 @@ resource "aws_lambda_function" "ingestion" {
   filename         = "lambda.zip"
   function_name    = "${var.project_name}-ingestion"
   role            = aws_iam_role.lambda_role.arn
-  handler         = "index.lambda_handler"
+  handler         = "lambda_function.lambda_handler"
   source_code_hash = filebase64sha256("lambda.zip")
   runtime         = "python3.11"
   timeout         = 30
@@ -217,3 +217,15 @@ output "region" {
   description = "AWS region"
   value       = var.aws_region
 }
+output "raw_bucket_name" {
+  description = "Name of the raw data bucket (alias for s3_bucket_name)"
+  value       = aws_s3_bucket.raw_data.id
+}
+
+
+
+
+
+
+
+

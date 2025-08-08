@@ -1,0 +1,58 @@
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.env
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+*.auto.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# AWS
+.aws/
+aws_credentials
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project specific
+outputs.json
+access_key.json
+*.log
+.cache/
+tmp/
+
+# Sensitive data
+*.pem
+*.key
+secrets/
+credentials/
+
+# Local test data
+local_data/
+test_output/
+EOF
+
+# doc
+docs/
