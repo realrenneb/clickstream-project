@@ -54,4 +54,31 @@ test_output/
 
 # Documentation
 docs/
+
+.aws/config
+aws-exports.js
+awscli-bundle/
+.boto
+boto.cfg
+
+# Environment variables with AWS secrets
+.env.local
+.env.production
+.env.staging
+.env.development
+
+# Common AWS secret file names
+aws_access_key_id
+aws_secret_access_key
+AWS_*
+*aws-key*
+*aws_key*
+*access-key*
+*secret-key*
+*session-token*
+
+# Terraform/CDK output files that might contain ARNs
+cdk.out/
+.cdk.staging/
+terraform.tfvars.backup
 EOF
