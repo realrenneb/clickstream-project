@@ -23,6 +23,13 @@ override.tf.json
 *_override.tf.json
 .terraformrc
 terraform.rc
+echo "# Terraform files" >> .gitignore
+echo ".terraform/" >> .gitignore
+echo ".terraform.lock.hcl" >> .gitignore
+echo "*.tfstate" >> .gitignoregcdcd
+echo "*.tfstate.*" >> .gitignore
+echo "*.tfvars" >> .gitignore
+echo "*.tfvars.json" >> .gitignore
 
 # AWS
 .aws/
